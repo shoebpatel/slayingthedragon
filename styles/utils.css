@@ -1,0 +1,107 @@
+/* xs at least 475px and up*/
+/* @media (min-width: 475px) {} */
+
+/* sm at least 640px and up*/
+/* @media (min-width: 640px) {} */
+
+/* md at least 768px and up*/
+/* @media (min-width: 768px) {} */
+
+/* lg at least 1024px and up*/
+/* @media (min-width: 1024px) {} */
+
+/* xl at least 1280px and up*/
+/* @media (min-width: 1280px) {} */
+
+/* 2xl at least 1536px and up*/
+/* @media (min-width: 1536px) {} */
+
+/* @media (min-width: 475px) -> at least 475px and up, than apply styles */
+
+/* @media (max-width: 475px) -> at most 475px and down, than apply styles */
+
+/* Never use width with percentage for container wrapper*/
+
+/* In CSS the styles defined later in the code will override earlier styles if both are applicable So, the
+   order of the below media queries matters as when xs is shifted to the last, the smaller breakpoint (475px) 
+   would override the larger one (1536px), leading to an incorrect behavior.
+  - On screens larger than 1536px, instead of using the 1536px width, the container would be restricted to 475px, 
+    because the "xs" media query would apply after the "2xl" one.
+  - As the screen size increases the previous smaller screen styles will be overridden by the large screen styles.
+  - Always add media queries at the end.
+*/
+
+.container {
+  width: 100%; /* here, we are using percentage because we are using mobile first approach & 100% will be default for screen smaller than 475px*/
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+}
+
+.section {
+  margin-top: 5rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  color: var(--clr-dark);
+  background-color: var(--clr-btn);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1em 1em;
+  border-radius: 5px;
+  letter-spacing: -0.05em;
+  word-spacing: -0.30em;
+  transition: color 0.3s;
+}
+
+.btn:hover {
+  color: var(--clr-base);
+}
+
+/* xs at least 475px and up*/
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm at least 640px and up*/
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md at least 768px and up*/
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg at least 1024px and up*/
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .section {
+    margin-top: 10rem;
+  }
+}
+
+/* xl at least 1280px and up*/
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl at least 1536px and up*/
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}

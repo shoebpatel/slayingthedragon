@@ -1,0 +1,74 @@
+:root {
+  /* colors */
+  --clr-dark: #030712;
+  --clr-light: #E2E8F0;
+  --clr-base: #7F8EA3;
+  --clr-base-light: #94A3B8;
+  --clr-base-dark: #1E293B;
+  --clr-btn: #F8FAFC;
+
+  /* font sizes */
+  --size-xs: 0.75rem;   /*default 12px*/
+  --size-sm: 0.875rem;  /*default 14px*/
+  --size-base: 1rem;    /*default 16px*/
+  --size-lg: 1.125rem;  /*default 18px*/
+  --size-xl: 1.25rem;   /*default 20px*/
+  --size-2xl: 1.5rem;   /*default 24px*/
+  --size-3xl: 1.875rem; /*default 30px*/
+  --size-4xl: 2.25rem;  /*default 36px*/
+  --size-5xl: 3rem;     /*default 48px*/
+  --size-6xl: 3.75rem;  /*default 60px*/
+  --size-7xl: 5rem;   /*default 72px*/
+  --size-8xl: 6rem;     /*default 96px*/
+  --size-9xl: 8rem;     /*default 128px*/
+  
+  --box-shadow: 0px 10px 10px 0px rgb(10, 16, 31, 0.3), 0px 10px 10px 0px rgb(10, 16, 31, 0.5);
+  
+  --font-family-secondary: "Source Code Pro", system-ui;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem); /*1em bcaz it adjusts according to the size of the text eg: 8px, 12px, 14px etc.*/
+}                                   /*0.5rem bcaz it's fixed & add 8px above the 1em*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--clr-dark);
+  color: var(--clr-base);
+  overflow-x: hidden;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+a {
+  color: var(--clr-base-light);
+}
+
+strong {
+  color: var(--clr-li);
+}
+
+
+
