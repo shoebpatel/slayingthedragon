@@ -25,11 +25,10 @@
 }
 
 .social-link-flex {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    display: none;
 }
 
 .social-link {
@@ -204,6 +203,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 9999;
 }
 
 .mobile-menu-close-btn {
