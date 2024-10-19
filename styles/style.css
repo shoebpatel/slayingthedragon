@@ -67,8 +67,6 @@ a {
 }
 
 strong {
-  color: var(--clr-li);
+  color: var(--clr-light);
+    font-weight: 900;
 }
-
-
-

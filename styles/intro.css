@@ -1,0 +1,138 @@
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-img {
+    height: 8.75rem;
+    width: 8.75rem;
+}
+
+.intro-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro-text-1 {
+    color: var(--clr-light);
+    font-size: var(--size-3xl);
+    line-height: 1em;
+    font-weight: 900;
+    padding-top: 0.5em;
+}
+
+.intro-text-1-br {
+    display: none;
+}
+
+.intro-text-2 {
+    color: var(--clr-base);
+    font-size: var(--size-sm);
+    font-family: var(--font-family-secondary);
+    letter-spacing: -0.05em;
+    padding-top: 1.5em;
+    line-height: 1.75em;
+}
+
+.intro-text-3 {
+    color: var(--clr-base);
+    font-size: var(--size-sm);
+    padding-top: 1.5em;
+    max-width: 56ch;
+    line-height: 1.75em;
+}
+
+.intro-btn {
+    margin-top: 1em !important;
+    font-weight: 500 !important;
+    word-spacing: normal !important;
+    padding: 0.75em 1em !important;
+}
+
+/* xs at least 475px and up*/
+@media (min-width: 475px) {
+    .intro-text-1 {
+       font-size: var(--size-4xl);
+    }
+    
+    .intro-text-2 {
+        max-width: 50ch;
+        font-size: var(--size-base);
+    }
+    
+    .intro-text-3 {
+        max-width: 45ch;
+        font-size: var(--size-base);
+    }
+    
+    .middle-img {
+        height: 9.75rem;
+        width: 9.75rem;
+    }
+}
+
+/* sm at least 640px and up*/
+@media (min-width: 640px) {
+    .intro-text-1-br {
+        display: block;
+    }
+
+    .intro-text-2 {
+        max-width: 65ch;
+    }
+    
+    .intro-text-3 {
+        max-width: 56ch;
+    }
+    
+}
+
+/* md at least 768px and up*/
+@media (min-width: 768px) {
+    .intro-text-1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* lg at least 1024px and up*/
+@media (min-width: 1024px) {
+    .intro-text-1 {
+       font-size: var(--size-5xl);
+    }
+    
+    .middle-img {
+        height: 12.75rem;
+        width: 12.75rem;
+    }
+}
+
+/* xl at least 1280px and up*/
+@media (min-width: 1280px) {
+    .intro-text-1 {
+       font-size: var(--size-6xl);
+    }
+    
+    .intro-text-2 {
+        font-size: var(--size-lg);
+        max-width: 65ch;
+        line-height: 1.5em;
+    }
+    
+    .intro-text-3 {
+        font-size: var(--size-lg);
+        max-width: 56ch;
+        line-height: 1.5em;
+    }
+    
+    .intro-btn {
+        font-size: var(--size-lg);
+    }
+}
+
+/* 2xl at least 1536px and up*/
+/* @media (min-width: 1536px) {} */

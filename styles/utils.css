@@ -36,10 +36,11 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0.5rem;
+  /* border: 1px solid red; */
 }
 
 .section {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .btn {
@@ -85,10 +86,6 @@
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
-  }
-
-  .section {
-    margin-top: 10rem;
   }
 }
 
