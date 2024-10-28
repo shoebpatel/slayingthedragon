@@ -1,0 +1,218 @@
+.courses {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.courses-wrapper {
+  display: grid;
+  gap: 1rem; 
+}
+
+.courses-title {
+  font-family: var(--font-family-secondary);
+  color: var(--clr-base-light);
+  font-size: var(--size-xs);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card {
+  background-color: #0a101f;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  font-size: var(--size-xs);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.card-header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header-title{
+  color: var(--clr-light);
+  font-size: var(--size-lg);
+  font-weight: 800;
+}
+
+.card-header-title-offer {
+  background-color: white;
+  color: var(--clr-dark);
+  font-size: 8px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  font-weight: 700;
+}
+
+.card-header-icon {
+  fill: var(--clr-light);
+  font-size: var(--size-3xl);
+}
+
+.card-title {
+  font-size: var(--size-xs);
+  font-family: var(--font-family-secondary);
+  color: var(--clr-light);
+}
+
+.card-details {
+  font-size: var(--size-xs);
+  font-family: var(--font-family-secondary);
+  color: var(--clr-base);
+}
+
+.card-details-value {
+  color: var(--clr-light);
+}
+
+.card-description {
+  font-size: var(--size-xs);
+  font-family: var(--font-family-secondary);
+  color: var(--clr-base-light);
+  margin-bottom: 1em;
+  max-width: 70ch;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.course-price {
+    font-size: var(--size-xs) !important;
+    display: block !important;
+    letter-spacing: normal !important;
+    word-spacing: normal !important;
+}
+
+.card-preview {
+  font-size: var(--size-xs);
+  font-family: var(--font-family-secondary);
+  color: var(--clr-base-light);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.card-preview:hover {
+    color: var(--clr-light);
+}
+
+/* xs at least 475px and up*/
+@media (min-width: 475px) {
+    .courses-title {
+        font-size: var(--size-sm);
+    }
+    .card-header-title{
+        font-size: var(--size-xl);
+    }
+    .card-header-icon{
+        font-size: var(--size-4xl);
+    }
+    .card-title{
+        font-size: var(--size-sm);
+    }
+    .card-description{
+        font-size: var(--size-sm);
+    }
+    .course-price{
+        font-size: var(--size-sm) !important;
+    }
+    .card-preview{
+        font-size: var(--size-sm);
+    }
+}
+
+/* sm at least 640px and up*/
+@media (min-width: 640px) {
+}
+
+/* md at least 768px and up*/
+@media (min-width: 768px) {
+}
+
+/* lg at least 1024px and up*/
+@media (min-width: 1024px) {
+    .courses-wrapper {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        'css css css css js js'
+        'reactjs reactjs reactjs nextjs nextjs nextjs'
+        ;
+    }
+    .course-grid-css {
+        grid-area: css;
+        /* grid-row: 1/2;
+        grid-column: 1/5; */
+    }
+    .course-grid-js {
+        grid-area: js;
+        /* grid-row: 1/2;
+        grid-column: 5/7; */
+    }
+    .course-grid-reactjs {
+        grid-area: reactjs;
+        /* grid-row: 2/3;
+        grid-column: 1/4; */
+    }
+    .course-grid-nextjs {
+        grid-area: nextjs;
+        /* grid-row: 2/3;
+        grid-column: 4/7; */
+    }
+}
+
+/* xl at least 1280px and up*/
+@media (min-width: 1280px) {
+    .courses-title {
+        font-size: var(--size-base);
+    }
+    .card-header-title{
+        font-size: var(--size-2xl);
+    }
+    .card-header-title-offer {
+        font-size: var(--size-xs);
+    }
+    .card-header-icon{
+        font-size: var(--size-5xl);
+    }
+    .card-title{
+        font-size: var(--size-base);
+    }
+    .card-details{
+        font-size: var(--size-sm);
+    }
+    .card-description{
+        font-size: var(--size-base);
+    }
+    .course-price{
+        font-size: var(--size-base) !important;
+    }
+    .card-preview{
+        font-size: var(--size-base);
+    }
+}
+
+/* 2xl at least 1536px and up*/
+/* @media (min-width: 1536px) {} */
