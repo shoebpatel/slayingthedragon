@@ -1,0 +1,169 @@
+.about-title {
+  font-family: var(--font-family-secondary);
+  color: var(--clr-base-light);
+  font-size: var(--size-xs);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-header {
+  font-size: var(--size-3xl);
+  color: var(--clr-light);
+}
+
+.about-description1 {
+  font-size: var(--size-base);
+  color: var(--clr-base);
+  font-family: var(--font-family-secondary);
+  margin-top: 1rem;
+  line-height: 1.75rem;
+  max-width: 70ch;
+}
+
+.about-description-span {
+  color: var(--clr-light);
+  text-decoration: underline;
+}
+
+.about-description2 {
+  font-size: var(--size-base);
+  color: var(--clr-base-light);
+  margin-top: 1.5rem;
+  line-height: 1.75rem;
+  max-width: 70ch;
+}
+
+.discord-btn {
+  font-size: var(--size-sm);
+  word-spacing: normal !important;
+  letter-spacing: 0em !important;
+  display: flex;
+  gap: 0.5em;
+  margin-top: 1rem;
+}
+
+.about-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+
+.about-channel{
+  font-size: var(--size-xs);
+  color: var(--clr-base-light);
+  font-family: var(--font-family-secondary);
+}
+
+.about-channel-numbers{
+  font-size: var(--size-3xl);
+  color: var(--clr-light);
+  font-weight: bold;
+}
+
+.about-channel-numbers-span{
+  color: var(--clr-base);
+}
+
+/* xs at least 475px and up*/
+@media (min-width: 475px) {
+  .about-title {
+    font-size: var(--size-sm);
+  }
+  .discord-btn {
+    font-size: var(--size-base);
+  }
+  .about-channel{
+     font-size: var(--size-sm);
+  }
+  .about-channel-numbers{
+    font-size: var(--size-4xl);
+  }
+}
+
+/* sm at least 640px and up*/
+@media (min-width: 640px) {}
+
+/* md at least 768px and up*/
+@media (min-width: 768px) {}
+
+/* lg at least 1024px and up*/
+@media (min-width: 1024px) {
+  .about-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-wrapper2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* xl at least 1280px and up*/
+@media (min-width: 1280px) {
+  .about-title {
+    font-size: var(--size-base);
+  }
+
+  .about-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-wrapper1 {
+    display: block;
+    text-align: left;
+  }
+
+  .about-header {
+    font-size: var(--size-4xl);
+  }
+
+  .about-description1 {
+    font-size: var(--size-lg);
+    max-width: 63ch;
+  }
+
+  .about-description2 {
+    font-size: var(--size-lg);
+    max-width: 63ch;
+  }
+
+  .discord-btn {
+    font-size: var(--size-lg);
+  }
+
+  .about-wrapper2 {
+      justify-content: flex-start;
+      align-items: end;
+      text-align: right;
+      margin-top: 0;
+      gap: 3rem;
+  }
+  
+  .about-channel-numbers{
+    font-size: var(--size-5xl);
+  }
+}
+
+/* 2xl at least 1536px and up*/
+@media (min-width: 1536px) {
+  .about-description1 {
+    max-width: 70ch;
+  }
+
+  .about-description2 {
+    max-width: 70ch;
+  }
+}
