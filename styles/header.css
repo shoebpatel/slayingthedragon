@@ -11,8 +11,8 @@
 }
 
 .title-img {
-    height: var(--size-7xl);
-    width: var(--size-7xl);
+    height: 4.5rem;
+    width: 4.5rem;
 }
 
 .title {

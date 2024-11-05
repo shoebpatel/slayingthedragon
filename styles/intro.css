@@ -78,6 +78,10 @@
 
 /* sm at least 640px and up*/
 @media (min-width: 640px) {
+    .intro-text-1 {
+       font-size: var(--size-4xl);
+    }
+    
     .intro-text-1-br {
         display: block;
     }

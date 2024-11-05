@@ -4,6 +4,7 @@ import '../styles/header.css';
 import '../styles/intro.css';
 import '../styles/courses.css';
 import '../styles/about.css';
+import '../styles/feature.css';
 import '../styles/support.css';
 import '../styles/utils.css';
 
