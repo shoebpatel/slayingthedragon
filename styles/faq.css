@@ -1,0 +1,118 @@
+.faq-title {
+  font-family: var(--font-family-secondary);
+  color: var(--clr-base-light);
+  font-size: var(--size-xs);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.faq-header {
+  font-size: var(--size-2xl);
+  color: var(--clr-light);
+}
+
+.faq-description {
+  font-size: var(--size-sm);
+  color: var(--clr-base);
+  font-family: var(--font-family-secondary);
+  margin-top: 1rem;
+  line-height: 1.75rem;
+  max-width: 70ch;
+  margin-bottom: 1rem;
+}
+
+.faq-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-card {
+  gap: 1rem !important;
+}
+
+.faq-card-header {
+  font-size: var(--size-sm);
+  color: var(--clr-light);
+  max-width: fit-content;
+}
+
+.faq-card-description {
+  font-size: var(--size-xs);
+  font-family: var(--font-family-secondary);
+  color: var(--clr-base-light);
+  line-height: 1.5rem;
+  max-width: max-content;
+}
+
+/* xs at least 475px and up*/
+@media (min-width: 475px) {
+  .faq-title {
+    font-size: var(--size-sm);
+  }
+
+  .faq-header {
+    font-size: var(--size-3xl);
+  }
+
+  .faq-description {
+    font-size: var(--size-base);
+  }
+
+  .faq-card-header {
+    font-size: var(--size-base);
+  }
+
+  .faq-card-description {
+    font-size: var(--size-sm);
+  }
+}
+
+/* sm at least 640px and up*/
+@media (min-width: 640px) {}
+
+/* md at least 768px and up*/
+@media (min-width: 768px) {}
+
+/* lg at least 1024px and up*/
+@media (min-width: 1024px) {
+  .faq-title {
+    font-size: var(--size-base);
+  }
+
+  .faq-card-wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .faq-card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+  }
+}
+
+/* xl at least 1280px and up*/
+@media (min-width: 1280px) {
+  .faq-description {
+    font-size: var(--size-lg);
+  }
+
+  .faq-header {
+    font-size: var(--size-4xl);
+  }
+  
+  .faq-card-wrapper {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .faq-card {
+    grid-row: span 4;
+  }
+}
+
+/* 2xl at least 1536px and up*/
+@media (min-width: 1536px) {}

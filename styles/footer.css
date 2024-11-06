@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--size-xs);
+    line-height: 1rem;
+    padding: 0 !important;
+}
+
+/* xs at least 475px and up*/
+@media (min-width: 475px) {}
+
+/* sm at least 640px and up*/
+@media (min-width: 640px) {}
+
+/* md at least 768px and up*/
+@media (min-width: 768px) {}
+
+/* lg at least 1024px and up*/
+@media (min-width: 1024px) {}
+
+/* xl at least 1280px and up*/
+@media (min-width: 1280px) {}
+
+/* 2xl at least 1536px and up*/
+/* @media (min-width: 1536px) {} */
