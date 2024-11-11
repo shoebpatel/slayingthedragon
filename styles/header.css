@@ -63,6 +63,7 @@
     font-size: var(--size-xs);
     font-weight: 700;
     display: none;
+    text-decoration: none;
 }
 
 .account-btn {
