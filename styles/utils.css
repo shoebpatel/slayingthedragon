@@ -61,10 +61,10 @@
   color: var(--clr-base);
 }
 
-/* xs at least 475px and up*/
+/* target screen more then 475px, xs at least 475px and up*/
 @media (min-width: 475px) {
   .container {
-    max-width: 475px;
+    max-width: 475px; /* target screen less then 485px*/
   }
 }
 

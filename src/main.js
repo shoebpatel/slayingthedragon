@@ -14,3 +14,15 @@ import '../styles/utils.css';
 import mobileNav from "../src/components/mobile-nav";
 
 window.mobileNav = mobileNav;
+
+function isMobileDevice() {
+  const userAgent = navigator.userAgent.toLowerCase();
+  return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/.test(userAgent);
+}
+
+if (!isMobileDevice()) {
+  const accountBtn = document.querySelector(".account-btn-wrapper");
+  const accountSignIn = document.querySelector(".account-sign-in");
+  if (accountBtn) accountBtn.style.display = "none";
+  if (accountSignIn) accountSignIn.style.display = "block";
+}

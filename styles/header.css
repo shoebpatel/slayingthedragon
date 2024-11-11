@@ -58,6 +58,13 @@
     align-items: center;
 }
 
+.account-sign-in {
+    font-family: var(--font-family-secondary);
+    font-size: var(--size-xs);
+    font-weight: 700;
+    display: none;
+}
+
 .account-btn {
     fill: currentColor;
     display: flex;
@@ -294,6 +301,10 @@
     }
 
     .account-btn {
+        font-size: var(--size-sm);
+    }
+
+    .account-sign-in {
         font-size: var(--size-sm);
     }
 
